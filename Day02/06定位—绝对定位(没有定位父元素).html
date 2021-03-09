@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>绝对定位(没有定位父元素)</title>
+	<style type="text/css">
+		/*清除默认样式*/
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		body{
+			height: 1000px;
+		}
+		div{
+			width: 400px;
+			height: 200px;
+		}
+		.box1{
+			position: absolute;
+			left: 100px;
+			top: 100px;
+			background: red;
+		}
+		.box2{
+			background: green;
+		}
+		.box3{
+			background: purple;
+		}
+	</style>
+
+</head>
+<body>
+	<div class="box1"></div>
+	<div class="box2"></div>
+	<div class="box3"></div>
+</body>
+</html>

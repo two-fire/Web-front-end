@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>轮播图</title>
+  <style type="text/css">
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    .box{
+      /*相对定位*/
+      position: relative;
+      width: 520px;
+      height: 280px;
+      border: 1 px solid black;
+      left: 400px;v
+      top: 100px;
+      /*子元素超出了父元素，则隐藏*/
+      overflow: hidden;
+    }
+    ul{
+      position: absolute;
+      list-style: none;
+      width: 520px;
+      height: 280px;
+    }
+    .leftbtn{
+      position: absolute;
+      background: green;
+      left: 10px;
+      top: 100px;
+      width: 60px;
+      height: 30px;
+      color: white;
+      text-align: center;
+      line-height: 30px;
+      opacity: 0.8;
+    }
+    .rightbtn{
+      position: absolute;
+      background: green;
+      left: 450px;
+      top: 100px;
+      width: 60px;
+      height: 30px;
+      color: white;
+      text-align: center;
+      line-height: 30px;
+      opacity: 0.8;
+    }
+    ol{
+       position: absolute;
+       width: 200px;
+       height: 25px;
+       /*background: red;*/
+       left: 33%;
+       bottom: 5px;
+       list-style: none;
+       opacity: 0.8;
+       cursor: pointer;
+    }
+    /*后代选择器*/
+    ol li{
+      float: left;
+      width: 25px;
+      height: 25px;
+      background: green;
+      color: white;
+      left: 38%;
+      /*变为圆球*/
+      border-radius: 50%;
+      text-align: center;
+      line-height: 25px;
+      margin-right: 5px;
+    }
+    .cur{
+      background: skyblue;
+      /*进行缩放*/
+      transform: scale(1.2);
+    }
+  </style>
+</head>
+<body>
+	<div class="box">
+		<ul>
+			<li><img src="1.jpg"></li>
+			<li><img src="1.jpg"></li>
+			<li><img src="1.jpg"></li>
+			<li><img src="1.jpg"></li>
+			<li><img src="1.jpg"></li>
+		</ul>
+		<!-- 做左右按钮 -->
+		<div class="leftbtn">left</div>
+		<div class="rightbtn">right</div>
+		<!-- 分页器 -->
+    <ol>
+      <li class="cur">1</li>
+      <li>2</li>
+      <li>3</li>
+      <li>4</li>
+      <li>5</li>
+    </ol>
+	</div>
+</body>
+</html>
