@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    console.log([]); //[]
+    console.log(typeof []); //object
+    // 数组可以一次性存储很多数据
+    console.log([1,2,3,4,5]); //(5) [1, 2, 3, 4, 5] array[5]
+</script>
+<script>
+    //为了在js中使用数组方便，常将右侧数组赋值给左侧变量（通过变量名访问数组）
+    //存储数据
+    var arr = ["hello",123,true,NaN,[2,3,4]];
+    //读取数据，通过枚举法 + 下标获取
+    console.log(arr[0]); //hello
+    console.log(arr[4][1]); //3
+    //修改数组中已有的数据
+    arr[1] = "你好";
+    console.log(arr[1]);
+    //新增数据
+    arr[5] = "xinz";
+    arr[7] = 12; // arr[6] 用undefined进行填充
+    console.log(arr); //(8) ["hello", "你好", true, NaN, Array(3), "xinz", empty, 12]
+</script>
+
