@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    var i = 10;
+    var sum = 0;
+    while(i--) {
+        console.log(i);// 9~0
+       sum += i; 
+    }
+    console.log(sum); //45
+</script>
+<script>
+    var i = 10;
+    var sum = 0;
+    do {
+        console.log(i);// 10~0
+        sum += i; 
+    }while(i--)
+    console.log(sum); //45
+</script>
+<script>
+    var i = 2;
+    while(i--) {
+        var sum = 1;
+    }
+    console.log(sum); // 1
+</script>
+<script>
+    var i = 3;
+    waiceng: while(i--) {
+        console.log(i);
+        if (i == 1) break waiceng;
+    }
+</script>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    console.log(true && true); //true
+    console.log(false || true); //true
+    console.log(!!!true); //false
+    console.log(Boolean(0)); //false
+    console.log(Boolean(NaN)); //false
+    console.log(Boolean(-10)); //true
+
+    console.log(Boolean(''));//false
+    console.log(Boolean("el"));//true
+
+    console.log(Boolean(undefined));//false
+    console.log(Boolean(null));//false
+    console.log(Boolean(NaN));//false
+
+    console.log(NaN && 0);//都假，看前者。NaN
+    console.log(NaN && 32);//NaN
+    console.log("张三" && "李四");//都真，看后者。李四
+
+    console.log(NaN || 0);//都假，看后者。0
+    console.log("张三" || "李四");//都真，看前者。张三
+</script>
