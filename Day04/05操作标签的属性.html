@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="./img/1.jpg" alt="" id="box">
+    <div class="cur" id="ha">粉刷匠</div>
+</body>
+</html>
+<script>
+    //获取img标签
+    var img = document.getElementById("box");
+    //获取标签属性值
+    console.log(img.src); //file:///D:/OtherFiles/mashibing/web%E5%89%8D%E7%AB%AF%E6%A1%88%E4%BE%8B/Day04/img/1.jpg
+    //重新修改属性值
+    img.src = "./img/2.jpg";
+
+     //获取div标签
+     var div = document.getElementById("ha");
+    //获取标签属性值
+    console.log(div.id); //ha
+    console.log(div.className); //cur
+    //重新修改属性值
+    div.className = "rewrite";
+    div.id = "ga";
+    console.log(div); //<div class="rewrite" id="ga">粉刷本领强</div>
+    //修改文本
+    div.innerHTML = "粉刷本领强";
+</script>

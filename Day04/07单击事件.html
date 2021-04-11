@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>单击事件</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        #box {
+            background:red;
+            width: 600px;
+            height: 100px;
+            margin: 100px auto;
+            color: white;
+            text-align: center;
+            line-height: 100px;
+        }
+        #box1 {
+            position: relative; /*相对定位*/
+            background:cyan;
+            width: 100px;
+            height: 100px;
+            left:0px;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">文字</div>
+    <div id="box1"></div>
+</body>
+</html>
+<script>
+    // 给第一个div绑定单击事件
+    var div = document.getElementById("box");
+    // 全局变量 存储一下起始字号大小
+    var div1 = document.getElementById("box1");
+    var f = 16;
+    // 绑定单击事件
+    div.onclick = function() {
+        // 字号+1
+        f++;
+        div.style.fontSize = f + "px";
+        var r = parseInt(Math.random() * 255);
+        var g = parseInt(Math.random() * 255);
+        var b = parseInt(Math.random() * 255);
+        // 颜色随机
+        div.style.background = "rgb(" + r + "," + g + "," + b + ")";
+    }
+    var l = 0;
+    div1.onclick = function() {
+        l += 10;
+        div1.style.left = l + "px";
+    }
+</script>
